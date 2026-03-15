@@ -29,7 +29,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section style={{
+    <section id="hero-section" style={{
       backgroundColor: "#4A7FC4",
       backgroundImage: "url('https://info.goecfx.com/hubfs/BG-1.jpg')",
       backgroundSize: "cover",
