@@ -7,18 +7,22 @@ import WorkflowSection from "@/components/landing/WorkflowSection";
 import BenefitsSection from "@/components/landing/BenefitsSection";
 import FinalCTA from "@/components/landing/FinalCTA";
 import Footer from "@/components/landing/Footer";
+import WaveDivider from "@/components/landing/WaveDivider";
 
 const Index = () => (
   <div className="min-h-screen flex flex-col">
     <Header />
     <main className="flex-1">
       <HeroSection />
+      <WaveDivider type="bottom" />
       <SocialProof />
       <ProblemSection />
       <Testimonial />
       <WorkflowSection />
+      <WaveDivider type="top" />
       <BenefitsSection />
       <FinalCTA />
+      <WaveDivider type="bottom" />
     </main>
     <Footer />
   </div>
