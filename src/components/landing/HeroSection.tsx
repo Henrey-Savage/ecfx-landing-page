@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 const features = [
-  "Never miss a court deadline.",
-  "Instantly route notices to the right team.",
-  "Save directly to your firm's DMS.",
+  "93% average reduction in processing costs",
+  "Processes notices in seconds, not 5–60+ minutes",
+  "Seamless DMS, case management & billing integration",
 ];
 
 const inputClass =
