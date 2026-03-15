@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header
-      className="w-full sticky top-0 z-50"
+      className="w-full fixed top-0 left-0 z-50"
       style={{
         backgroundColor: scrolled ? "rgba(55, 104, 168, 0.97)" : "transparent",
         backdropFilter: scrolled ? "blur(10px)" : "none",
