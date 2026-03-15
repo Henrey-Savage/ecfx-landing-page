@@ -1,4 +1,24 @@
-const firms = ["Cooley", "Steptoe", "Orrick", "Buchanan", "Sacks Tierney"];
+import orrick from "@/assets/logos/orrick.webp";
+import buchanan from "@/assets/logos/buchanan.webp";
+import cohenClair from "@/assets/logos/cohen-clair.webp";
+import levyKonigsberg from "@/assets/logos/levy-konigsberg.webp";
+import avwhf from "@/assets/logos/avwhf.webp";
+import butlersnow from "@/assets/logos/butlersnow.webp";
+import kobre from "@/assets/logos/kobre.webp";
+import dentons from "@/assets/logos/dentons.webp";
+import steptoe from "@/assets/logos/steptoe.webp";
+
+const logos = [
+  { src: orrick, alt: "Orrick" },
+  { src: buchanan, alt: "Buchanan" },
+  { src: cohenClair, alt: "Cohen Clair" },
+  { src: levyKonigsberg, alt: "Levy Konigsberg" },
+  { src: avwhf, alt: "AVWHF" },
+  { src: butlersnow, alt: "Butler Snow" },
+  { src: kobre, alt: "Kobre & Kim" },
+  { src: dentons, alt: "Dentons" },
+  { src: steptoe, alt: "Steptoe" },
+];
 
 const SocialProof = () => (
   <section className="bg-surface py-14">
@@ -7,14 +27,14 @@ const SocialProof = () => (
         Trusted by Leading Law Firms
       </p>
       <div className="overflow-hidden">
-        <div className="flex animate-marquee whitespace-nowrap">
-          {[...firms, ...firms].map((name, i) => (
-            <span
-              key={`${name}-${i}`}
-              className="mx-12 text-2xl font-bold text-foreground opacity-40 grayscale select-none flex-shrink-0"
-            >
-              {name}
-            </span>
+        <div className="flex animate-marquee whitespace-nowrap items-center">
+          {[...logos, ...logos].map((logo, i) => (
+            <img
+              key={`${logo.alt}-${i}`}
+              src={logo.src}
+              alt={logo.alt}
+              className="mx-8 h-12 w-auto grayscale opacity-60 flex-shrink-0 object-contain"
+            />
           ))}
         </div>
       </div>
