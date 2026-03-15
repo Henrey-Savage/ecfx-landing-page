@@ -6,13 +6,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const hero = document.getElementById("hero-section");
-      if (hero) {
-        const heroBottom = hero.getBoundingClientRect().bottom;
-        setScrolled(heroBottom <= 80);
-      } else {
-        setScrolled(window.scrollY > 400);
-      }
+      setScrolled(window.scrollY > 0);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
@@ -27,7 +21,7 @@ const Header = () => {
     <header
       className="w-full sticky top-0 z-50"
       style={{
-        backgroundColor: scrolled ? "rgba(55, 104, 168, 0.95)" : "transparent",
+        backgroundColor: scrolled ? "rgba(55, 104, 168, 0.97)" : "transparent",
         backdropFilter: scrolled ? "blur(10px)" : "none",
         WebkitBackdropFilter: scrolled ? "blur(10px)" : "none",
         boxShadow: scrolled ? "0 2px 10px rgba(0,0,0,0.15)" : "none",
