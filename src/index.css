@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 26% 14%;
 
-    --primary: 217 91% 60%;
+    --primary: 210 68% 18%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 20% 98%;
@@ -27,7 +27,7 @@
     --accent: 210 20% 98%;
     --accent-foreground: 220 26% 14%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 171 100% 35%;
     --destructive-foreground: 0 0% 100%;
 
     --success: 160 84% 39%;
@@ -35,11 +35,15 @@
 
     --border: 216 12% 92%;
     --input: 216 12% 84%;
-    --ring: 217 91% 60%;
+    --ring: 171 100% 35%;
+
+    --teal: 171 100% 35%;
+    --teal-foreground: 0 0% 100%;
+    --teal-hover: 171 100% 39%;
 
     --radius: 0.5rem;
 
-    --navy: 213 78% 13%;
+    --navy: 209 68% 18%;
     --navy-foreground: 0 0% 100%;
     --surface: 210 17% 98%;
     --testimonial-bg: 0 0% 100%;
