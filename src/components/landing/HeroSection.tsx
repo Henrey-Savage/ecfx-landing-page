@@ -24,21 +24,21 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="bg-surface">
-      <div className="container max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-5 gap-12 items-center">
+    <section className="bg-navy">
+      <div className="container max-w-6xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-5 gap-14 items-center">
         {/* Left copy — 3 cols */}
-        <div className="md:col-span-3 space-y-6">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
+        <div className="md:col-span-3 space-y-7">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] text-navy-foreground tracking-tight">
             Stop Wasting Billable Hours on ECF Notices.
           </h1>
-          <p className="text-lg text-muted-foreground max-w-lg">
+          <p className="text-lg text-hero-subtitle max-w-lg leading-relaxed">
             See why top Am Law 100 firms use ECFX to intelligently automate their court notice routing and mitigate risk.
           </p>
-          <ul className="space-y-3">
+          <ul className="space-y-4 pt-2">
             {features.map((f) => (
-              <li key={f} className="flex items-center gap-3 text-foreground">
+              <li key={f} className="flex items-center gap-3 text-navy-foreground">
                 <Check className="h-5 w-5 text-success flex-shrink-0" />
-                <span>{f}</span>
+                <span className="text-base">{f}</span>
               </li>
             ))}
           </ul>
@@ -46,7 +46,7 @@ const HeroSection = () => {
 
         {/* Right form — 2 cols */}
         <div className="md:col-span-2">
-          <div className="bg-card rounded-xl shadow-card p-8">
+          <div className="bg-card rounded-xl shadow-2xl p-8">
             {submitted ? (
               <div className="text-center py-8 space-y-2">
                 <Check className="h-10 w-10 text-success mx-auto" />
@@ -54,47 +54,47 @@ const HeroSection = () => {
                 <p className="text-muted-foreground text-sm">We will be in touch.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <h3 className="text-lg font-semibold text-foreground text-center">Schedule a Demo</h3>
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <h3 className="text-xl font-bold text-foreground text-center">Schedule a Demo</h3>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">First Name</label>
+                  <label className="block text-sm font-medium text-muted-foreground mb-1.5">First Name</label>
                   <input
                     required
                     value={form.firstName}
                     onChange={(e) => setForm({ ...form, firstName: e.target.value })}
-                    className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                    className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Last Name</label>
+                  <label className="block text-sm font-medium text-muted-foreground mb-1.5">Last Name</label>
                   <input
                     required
                     value={form.lastName}
                     onChange={(e) => setForm({ ...form, lastName: e.target.value })}
-                    className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                    className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Business Email</label>
+                  <label className="block text-sm font-medium text-muted-foreground mb-1.5">Business Email</label>
                   <input
                     required
                     type="email"
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                    className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-1">Number of Litigators</label>
+                  <label className="block text-sm font-medium text-muted-foreground mb-1.5">Number of Litigators</label>
                   <select
                     required
                     value={form.litigators}
                     onChange={(e) => setForm({ ...form, litigators: e.target.value })}
-                    className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                    className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
                   >
                     <option value="">Select…</option>
                     <option value="1-9">1-9</option>
@@ -104,7 +104,7 @@ const HeroSection = () => {
                   </select>
                 </div>
 
-                <Button type="submit" variant="cta" size="lg" className="w-full">
+                <Button type="submit" variant="cta" size="lg" className="w-full hover:scale-[1.02] transition-transform">
                   Schedule My Custom Demo
                 </Button>
               </form>

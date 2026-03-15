@@ -55,9 +55,15 @@ export default {
           foreground: "hsl(var(--success-foreground))",
         },
         surface: "hsl(var(--surface))",
+        navy: {
+          DEFAULT: "hsl(var(--navy))",
+          foreground: "hsl(var(--navy-foreground))",
+        },
         "testimonial-bg": "hsl(var(--testimonial-bg))",
         "footer-bg": "hsl(var(--footer-bg))",
         "footer-foreground": "hsl(var(--footer-foreground))",
+        "hero-subtitle": "hsl(var(--hero-subtitle))",
+        gold: "hsl(var(--gold))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
