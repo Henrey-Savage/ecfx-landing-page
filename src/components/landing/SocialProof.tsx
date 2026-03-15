@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import avwhfLogo from "@/assets/logos/avwhf.webp";
+import arentfoxLogo from "@/assets/logos/arentfox-schiff.webp";
 
 const logos = [
   { src: "https://info.goecfx.com/hs-fs/hubfs/Dentons-1.png?width=250&name=Dentons-1.png", alt: "Dentons" },
@@ -7,7 +7,7 @@ const logos = [
   { src: "https://www.goecfx.com/hs-fs/hubfs/orrick.png?width=250&name=orrick.png", alt: "Orrick" },
   { src: "https://www.goecfx.com/hs-fs/hubfs/steptoe.png?width=250&name=steptoe.png", alt: "Steptoe" },
   { src: "https://www.goecfx.com/hs-fs/hubfs/kobre.png?width=250&name=kobre.png", alt: "Kobre & Kim" },
-  { src: avwhfLogo, alt: "ArentFox Schiff" },
+  { src: arentfoxLogo, alt: "ArentFox Schiff" },
   { src: "https://info.goecfx.com/hs-fs/hubfs/Seeger-1.png?width=250&name=Seeger-1.png", alt: "Seeger Weiss LLP" },
   { src: "https://www.goecfx.com/hs-fs/hubfs/butlersnow.png?width=250&name=butlersnow.png", alt: "Butler Snow" },
 ];
