@@ -61,7 +61,8 @@ const HeroSection = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
-                <h3 className="text-xl font-bold text-navy text-center">Schedule a Demo</h3>
+                <h3 className="text-xl font-bold text-navy text-center">Get Your Custom Demo</h3>
+                <p className="text-sm text-muted-foreground text-center">See how ECFX can save your firm hundreds of hours per week.</p>
 
                 <div>
                   <label className="block text-sm font-medium text-navy mb-1.5">First Name *</label>
