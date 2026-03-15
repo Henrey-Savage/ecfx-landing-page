@@ -4,7 +4,13 @@ const FinalCTA = () => {
   };
 
   return (
-    <section className="py-16 md:py-24" style={{ background: "linear-gradient(180deg, #0F2B4C 0%, #0A1F38 100%)" }}>
+    <section className="py-16 md:py-24" style={{
+      backgroundColor: "#4A7FC4",
+      backgroundImage: "url('https://info.goecfx.com/hubfs/BG-1.jpg')",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "bottom center",
+    }}>
       <div className="container max-w-3xl mx-auto px-6 text-center space-y-6">
         <h2 className="text-[32px] font-bold text-navy-foreground leading-tight">
           Ready to Automate Your ECF Notice Processing?

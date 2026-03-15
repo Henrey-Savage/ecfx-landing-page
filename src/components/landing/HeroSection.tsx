@@ -29,7 +29,13 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="bg-navy">
+    <section style={{
+      backgroundColor: "#4A7FC4",
+      backgroundImage: "url('https://info.goecfx.com/hubfs/BG-1.jpg')",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "top center",
+    }}>
       <div className="container max-w-6xl mx-auto px-6 pt-10 md:pt-[60px] pb-16 md:pb-24 grid md:grid-cols-5 gap-14 items-center">
         {/* Left copy — 3 cols */}
         <div className="md:col-span-3 space-y-7">

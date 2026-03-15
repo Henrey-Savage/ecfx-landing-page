@@ -24,7 +24,13 @@ const benefits = [
 ];
 
 const BenefitsSection = () => (
-  <section className="bg-navy py-16 md:py-24">
+  <section className="py-16 md:py-24" style={{
+    backgroundColor: "#4A7FC4",
+    backgroundImage: "url('https://info.goecfx.com/hubfs/BG-1.jpg')",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+  }}>
     <div className="container max-w-5xl mx-auto px-6">
       <h2 className="text-[32px] md:text-[36px] font-bold text-navy-foreground text-center mb-14 leading-tight">
         Built for the Way Firms Actually Work
