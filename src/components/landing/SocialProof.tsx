@@ -14,18 +14,18 @@ const logos = [
 ];
 
 const SocialProof = () => (
-  <section className="bg-surface py-12">
+  <section style={{ backgroundColor: "#F7F8FA" }} className="py-[60px]">
     <div className="container max-w-5xl mx-auto px-6 text-center">
       <p className="text-xs font-bold tracking-[0.2em] text-muted-foreground uppercase mb-10">
         Trusted by Leading Law Firms
       </p>
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-8 items-center justify-items-center">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 items-center justify-items-center">
         {logos.map((logo) => (
           <img
             key={logo.alt}
             src={logo.src}
             alt={logo.alt}
-            className="max-h-[45px] w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 object-contain"
+            className="min-h-[60px] max-h-[70px] w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 object-contain"
           />
         ))}
       </div>
