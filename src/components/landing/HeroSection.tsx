@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 const features = [
-  "Never miss a court deadline.",
-  "Instantly route notices to the right team.",
-  "Save directly to your firm's DMS.",
+  "93% average reduction in processing costs",
+  "Processes notices in seconds, not 5–60+ minutes",
+  "Seamless DMS, case management & billing integration",
 ];
 
 const inputClass =
@@ -33,11 +33,12 @@ const HeroSection = () => {
       <div className="container max-w-6xl mx-auto px-6 pt-10 md:pt-[60px] pb-16 md:pb-24 grid md:grid-cols-5 gap-14 items-center">
         {/* Left copy — 3 cols */}
         <div className="md:col-span-3 space-y-7">
+          <p className="text-[13px] uppercase font-semibold tracking-[2px] text-destructive">ENTERPRISE NOTICE MANAGEMENT</p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] text-navy-foreground tracking-tight">
-            Stop Wasting Billable Hours on ECF Notices.
+            Stop Wasting Hundreds of Hours on Manual ECF Notice Processing
           </h1>
           <p className="text-lg text-navy-foreground/70 max-w-lg leading-relaxed">
-            See why top Am Law 100 firms use ECFX to intelligently automate their court notice routing and mitigate risk.
+            ECFX Notice automates the entire 8-step ECF workflow — from download to distribution — in seconds. Trusted by Dentons, Cooley, Perkins Coie, and 100+ leading firms.
           </p>
           <ul className="space-y-4 pt-2">
             {features.map((f) => (
@@ -60,7 +61,8 @@ const HeroSection = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
-                <h3 className="text-xl font-bold text-navy text-center">Schedule a Demo</h3>
+                <h3 className="text-xl font-bold text-navy text-center">Get Your Custom Demo</h3>
+                <p className="text-sm text-muted-foreground text-center">See how ECFX can save your firm hundreds of hours per week.</p>
 
                 <div>
                   <label className="block text-sm font-medium text-navy mb-1.5">First Name *</label>
