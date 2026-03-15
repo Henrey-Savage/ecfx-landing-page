@@ -6,13 +6,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const hero = document.getElementById("hero-section");
-      if (hero) {
-        const heroBottom = hero.getBoundingClientRect().bottom;
-        setScrolled(heroBottom <= 80);
-      } else {
-        setScrolled(window.scrollY > 400);
-      }
+      setScrolled(window.scrollY > 0);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
