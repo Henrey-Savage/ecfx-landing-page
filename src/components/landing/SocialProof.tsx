@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import avwhfLogo from "@/assets/logos/avwhf.webp";
 
 const logos = [
   { src: "https://info.goecfx.com/hs-fs/hubfs/Dentons-1.png?width=250&name=Dentons-1.png", alt: "Dentons" },
