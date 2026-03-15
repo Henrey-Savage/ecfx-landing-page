@@ -4,6 +4,8 @@ import SocialProof from "@/components/landing/SocialProof";
 import ProblemSection from "@/components/landing/ProblemSection";
 import Testimonial from "@/components/landing/Testimonial";
 import WorkflowSection from "@/components/landing/WorkflowSection";
+import BenefitsSection from "@/components/landing/BenefitsSection";
+import FinalCTA from "@/components/landing/FinalCTA";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => (
@@ -15,6 +17,8 @@ const Index = () => (
       <ProblemSection />
       <Testimonial />
       <WorkflowSection />
+      <BenefitsSection />
+      <FinalCTA />
     </main>
     <Footer />
   </div>
