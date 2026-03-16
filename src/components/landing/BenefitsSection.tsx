@@ -24,11 +24,11 @@ const benefits = [
 
 
 const bgStyle = {
-  backgroundColor: "#4A7FC4",
+  backgroundColor: "#2D8AE5",
   backgroundImage: "url('https://info.goecfx.com/hubfs/BG-1.jpg')",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat" as const,
-  backgroundPosition: "center center"
+  backgroundPosition: "top center"
 };
 
 const BenefitsSection = () => {
