@@ -1,11 +1,11 @@
 const stats = [
-  { tag: "CHEAPER", number: "93%", label: "reduction in processing costs" },
-  { tag: "FASTER", number: "<5s", label: "to process each notice" },
-  { tag: "BETTER", number: "10x", label: "more accurate than manual processing" },
-];
+{ tag: "CHEAPER", number: "93%", label: "reduction in processing costs" },
+{ tag: "FASTER", number: "<5s", label: "to process each notice" },
+{ tag: "BETTER", number: "10x", label: "more accurate than manual processing" }];
 
-const ProblemSection = () => (
-  <section className="relative bg-surface pt-12 lg:pt-16 pb-28 md:pb-32">
+
+const ProblemSection = () =>
+<section className="relative bg-surface pt-12 lg:pt-16 pb-28 md:pb-32">
     <div className="container max-w-6xl mx-auto px-6">
       <div className="grid md:grid-cols-[55fr_45fr] gap-12 items-start">
         {/* Left — headline + quote */}
@@ -26,17 +26,17 @@ const ProblemSection = () => (
 
         {/* Right — stat cards */}
         <div className="flex flex-col gap-3">
-          {stats.map((s) => (
-            <div
-              key={s.tag}
-              className="bg-background"
-              style={{
-                border: "1px solid rgba(26,86,219,0.1)",
-                borderRadius: "12px",
-                padding: "20px 24px",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
-              }}
-            >
+          {stats.map((s) =>
+        <div
+          key={s.tag}
+          className="bg-background"
+          style={{
+            border: "1px solid rgba(26,86,219,0.1)",
+            borderRadius: "12px",
+            padding: "20px 24px",
+            boxShadow: "0 2px 8px rgba(0,0,0,0.04)"
+          }}>
+          
               <p style={{ fontSize: "11px", fontWeight: 600, color: "#10b981", textTransform: "uppercase", letterSpacing: "0.05em" }}>
                 {s.tag}
               </p>
@@ -47,20 +47,20 @@ const ProblemSection = () => (
                 {s.label}
               </p>
             </div>
-          ))}
+        )}
         </div>
       </div>
 
       {/* Tagline */}
       <p className="text-center" style={{ fontSize: "18px", fontWeight: 600, color: "#1A56DB", marginTop: "32px" }}>
-        Better. Faster. Cheaper. Pick three.
+        Cheaper. Faster. Better.  Pick three.
       </p>
     </div>
 
     <svg viewBox="0 0 1440 80" preserveAspectRatio="none" className="absolute bottom-0 left-0 block w-full" style={{ height: "80px", marginBottom: "-1px" }}>
       <path d="M0,0 C360,80 1080,80 1440,0 L1440,80 L0,80 Z" fill="hsl(var(--background))" />
     </svg>
-  </section>
-);
+  </section>;
+
 
 export default ProblemSection;
