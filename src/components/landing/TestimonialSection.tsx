@@ -18,7 +18,7 @@ const TestimonialSection = () => (
         manually.
       </blockquote>
 
-      <div className="mt-8 space-y-0.5">
+      <div className="mt-8 mb-20 space-y-0.5">
         <p className="font-bold text-foreground" style={{ fontSize: "14px" }}>
           The LegalTech Fund
         </p>
