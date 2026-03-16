@@ -28,18 +28,21 @@ const Header = () => {
         transition: "background-color 300ms ease, backdrop-filter 300ms ease, box-shadow 300ms ease",
       }}
     >
-      <div className="container max-w-6xl mx-auto px-6 py-4 grid md:grid-cols-5 gap-14 items-center">
-        <div className="md:col-span-3 flex items-center">
-          <img src={ecfxLogo} alt="ECFX" className="h-[50px]" />
-        </div>
-        <div className="md:col-span-2 flex justify-center px-8">
-          <button
-            onClick={handleDemoClick}
-            className="w-full inline-flex items-center justify-center px-8 py-2.5 text-base font-semibold rounded-md bg-destructive text-destructive-foreground hover:bg-destructive/90 hover:scale-[1.02] transition-all duration-200 shadow-sm hover:shadow-md whitespace-nowrap"
-          >
-            Schedule My Custom Demo
-          </button>
-        </div>
+      <div className="container max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <img src={ecfxLogo} alt="ECFX" className="h-[50px]" />
+        <button
+          onClick={handleDemoClick}
+          className="hidden md:inline-flex items-center justify-center px-8 py-2.5 text-base font-semibold rounded-md bg-destructive text-destructive-foreground hover:bg-destructive/90 hover:scale-[1.02] transition-all duration-200 shadow-sm hover:shadow-md whitespace-nowrap"
+        >
+          Schedule My Custom Demo
+        </button>
+        <button
+          onClick={handleDemoClick}
+          className="md:hidden inline-flex flex-col items-center justify-center px-4 py-2 text-xs font-bold rounded-md bg-destructive text-destructive-foreground hover:bg-destructive/90 transition-all duration-200 shadow-sm leading-tight"
+        >
+          <span>Schedule My</span>
+          <span>Custom Demo</span>
+        </button>
       </div>
     </header>
   );
