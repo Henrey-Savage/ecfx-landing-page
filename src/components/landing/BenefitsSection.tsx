@@ -44,17 +44,16 @@ const BenefitsSection = () => {
           <h2 className="text-[32px] font-bold text-navy-foreground leading-tight">
             Ready to Automate Your ECF Notice Processing?
           </h2>
-          <p className="text-lg" style={{ color: "#B0BEC5" }}>
-            Join 100+ law firms saving hundreds of hours every week.
+          <p className="text-lg" style={{ color: "rgba(255,255,255,0.45)" }}>
+            Join Dentons, Cooley, and 100+ litigation teams saving hundreds of hours every week.
           </p>
           <button
             onClick={scrollToForm}
             className="inline-flex items-center justify-center h-12 px-8 rounded-lg bg-destructive text-destructive-foreground font-bold text-base hover:bg-[hsl(var(--teal-hover))] transition-colors">
-            
-            Schedule My Demo →
+            Schedule My Custom Demo →
           </button>
-          <p className="text-sm" style={{ color: "#8899AA" }}>
-            Or email sales@goecfx.com &nbsp;•&nbsp; (310) 750-4160
+          <p className="text-sm mt-5" style={{ color: "rgba(255,255,255,0.45)" }}>
+            Or email <span style={{ color: "rgba(255,255,255,0.65)" }}>sales@goecfx.com</span> · <span style={{ color: "rgba(255,255,255,0.65)" }}>(310) 750-4160</span>
           </p>
         </div>
       </div>
