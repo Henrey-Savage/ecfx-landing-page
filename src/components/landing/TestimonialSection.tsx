@@ -1,5 +1,5 @@
 const TestimonialSection = () => (
-  <section className="relative bg-background pt-1 pb-2.5">
+  <section className="relative bg-background pt-1 pb-0">
     <div className="mx-auto max-w-[680px] px-6 text-center">
       <div
         className="text-primary/10 font-serif leading-none mb-1 select-none"
@@ -17,7 +17,7 @@ const TestimonialSection = () => (
         firm. I feel like this is actually a competitive edge for us.
       </blockquote>
 
-      <div className="mt-8 mb-4">
+      <div className="mt-8" style={{ marginBottom: "20px" }}>
         <p className="font-bold text-foreground" style={{ fontSize: "14px" }}>
           Kristi P., Director of Litigation Operations
         </p>
