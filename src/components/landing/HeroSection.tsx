@@ -38,7 +38,7 @@ const HeroSection = () => {
         <div className="md:col-span-3 space-y-7">
           <p className="text-[13px] uppercase font-semibold tracking-[2px] text-destructive">ENTERPRISE NOTICE MANAGEMENT</p>
           <h1 className="text-[28px] sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] text-navy-foreground tracking-tight">
-            Stop Wasting Hundreds of Hours on Manual ECF Notice Processing
+            Automate Every ECF Notice From Download to Distribution — In Seconds
           </h1>
           <p className="text-lg text-navy-foreground/70 max-w-lg leading-relaxed">
             ECFX Notice automates the entire 8-step ECF workflow — from download to distribution — in seconds. Trusted by Dentons, Cooley, Perkins Coie, and leading litigation firms.
