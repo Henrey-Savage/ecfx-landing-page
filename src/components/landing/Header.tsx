@@ -32,7 +32,7 @@ const Header = () => {
         <img src={ecfxLogo} alt="ECFX" className="h-[50px]" />
         <button
           onClick={handleDemoClick}
-          className="hidden md:inline-flex items-center px-5 py-2 text-sm font-semibold rounded-md border border-white text-white bg-transparent hover:bg-white hover:text-[#3768A8] transition-colors duration-200"
+          className="inline-flex items-center px-4 py-1.5 text-xs md:px-5 md:py-2 md:text-sm font-semibold rounded-md border border-white text-white bg-transparent hover:bg-white hover:text-[#3768A8] transition-colors duration-200"
           style={{ fontSize: "14px" }}
         >
           Schedule a Demo

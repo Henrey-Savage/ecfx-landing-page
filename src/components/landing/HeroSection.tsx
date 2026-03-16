@@ -82,15 +82,6 @@ const HeroSection = () => {
                   <input required type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className={inputClass} />
                 </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-navy mb-1.5">Firm / Company *</label>
-                  <input required value={form.company} onChange={(e) => setForm({ ...form, company: e.target.value })} className={inputClass} />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-navy mb-1.5">Phone Number</label>
-                  <input type="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className={inputClass} />
-                </div>
 
                 <div>
                   <label className="block text-sm font-medium text-navy mb-1.5">Number of Litigators *</label>
