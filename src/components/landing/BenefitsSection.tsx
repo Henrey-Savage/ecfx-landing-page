@@ -46,7 +46,7 @@ const BenefitsSection = () => {
         {/* CTA */}
         <div className="text-center space-y-6">
           <h2 className="text-[24px] md:text-[32px] font-bold text-navy-foreground leading-tight">
-            Are You <span style={{ fontFamily: "Georgia, serif", color: "#10b981" }}>Still</span> Manually Processing ECF Notices?
+            Are You <span style={{ fontFamily: "Georgia, serif" }} className="italic md:not-italic"><span className="text-navy-foreground md:text-[#10b981]">Still</span></span> Manually Processing ECF Notices?
           </h2>
           <p className="text-lg" style={{ color: "rgba(255,255,255,0.45)" }}>
             Join Dentons, Cooley, Perkins Coie, and leading litigation teams saving hundreds of hours every week.
