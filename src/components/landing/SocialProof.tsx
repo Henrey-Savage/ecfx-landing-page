@@ -33,7 +33,7 @@ const SocialProof = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="pt-12 pb-16 lg:pt-16 lg:pb-20">
+    <section ref={sectionRef} className="relative pt-12 pb-28 lg:pt-16 lg:pb-32">
       <div className="container mx-auto px-4">
         <p className="text-sm font-bold tracking-widest text-muted-foreground uppercase mb-10 text-center">
           Trusted by Leading Law Firms
@@ -80,6 +80,9 @@ const SocialProof = () => {
             </div>
           ))}
         </div>
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" className="absolute bottom-0 left-0 block w-full" style={{ height: "80px", marginBottom: "-1px" }}>
+          <path d="M0,0 C360,80 1080,80 1440,0 L1440,80 L0,80 Z" fill="hsl(var(--surface))" />
+        </svg>
       </div>
     </section>
   );

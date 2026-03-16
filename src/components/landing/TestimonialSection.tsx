@@ -1,5 +1,5 @@
 const TestimonialSection = () => (
-  <section className="bg-background border-t border-border py-[60px] md:py-[80px]" style={{ minHeight: "280px" }}>
+  <section className="relative bg-background py-[60px] md:py-[80px] pb-[140px] md:pb-[160px]" style={{ minHeight: "280px" }}>
     <div className="mx-auto max-w-[680px] px-6 text-center">
       <div
         className="text-primary/10 font-serif leading-none mb-4 select-none"
@@ -27,6 +27,9 @@ const TestimonialSection = () => (
         </p>
       </div>
     </div>
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" className="absolute bottom-0 left-0 block w-full" style={{ height: "80px", marginBottom: "-1px" }}>
+      <path d="M0,0 C360,80 1080,80 1440,0 L1440,80 L0,80 Z" fill="#2D8AE5" />
+    </svg>
   </section>
 );
 
