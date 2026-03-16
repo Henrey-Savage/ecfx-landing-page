@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 const features = [
-"Processes notices in seconds, not 5–60+ minutes",
-"Seamless DMS, case management & billing integration"];
+"Integrates with iManage, NetDocuments, ProLaw & more",
+"SOC 2 Type 2 certified · Encrypted at rest and in transit"];
 
 
 const inputClass =
