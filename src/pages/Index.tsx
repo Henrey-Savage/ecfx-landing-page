@@ -2,7 +2,7 @@ import Header from "@/components/landing/Header";
 import HeroSection from "@/components/landing/HeroSection";
 import SocialProof from "@/components/landing/SocialProof";
 import ProblemSection from "@/components/landing/ProblemSection";
-import Testimonial from "@/components/landing/Testimonial";
+
 import WorkflowSection from "@/components/landing/WorkflowSection";
 import BenefitsSection from "@/components/landing/BenefitsSection";
 import Footer from "@/components/landing/Footer";
