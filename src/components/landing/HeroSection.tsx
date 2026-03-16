@@ -55,7 +55,7 @@ const HeroSection = () => {
 
         {/* Right form — 2 cols */}
         <div className="md:col-span-2">
-          <div id="demo-form" className="bg-background rounded-2xl p-8" style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.12)" }}>
+          <div id="demo-form" className="bg-background rounded-2xl px-8 py-7" style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.12)" }}>
             {submitted ? (
               <div className="text-center py-8 space-y-2">
                 <Check className="h-10 w-10 text-navy mx-auto" />
@@ -67,14 +67,15 @@ const HeroSection = () => {
                 <h3 className="text-xl font-bold text-navy text-center">Get Your Custom Demo</h3>
                 <p className="text-sm text-muted-foreground text-center">See how ECFX can save your firm hundreds of hours per week.</p>
 
-                <div>
-                  <label className="block text-sm font-medium text-navy mb-1.5">First Name *</label>
-                  <input required value={form.firstName} onChange={(e) => setForm({ ...form, firstName: e.target.value })} className={inputClass} />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-navy mb-1.5">Last Name *</label>
-                  <input required value={form.lastName} onChange={(e) => setForm({ ...form, lastName: e.target.value })} className={inputClass} />
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <label className="block text-sm font-medium text-navy mb-1.5">First Name *</label>
+                    <input required value={form.firstName} onChange={(e) => setForm({ ...form, firstName: e.target.value })} className={inputClass} />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-navy mb-1.5">Last Name *</label>
+                    <input required value={form.lastName} onChange={(e) => setForm({ ...form, lastName: e.target.value })} className={inputClass} />
+                  </div>
                 </div>
 
                 <div>
@@ -82,11 +83,9 @@ const HeroSection = () => {
                   <input required type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className={inputClass} />
                 </div>
 
-
                 <div>
-                  <label className="block text-sm font-medium text-navy mb-1.5">Number of Litigators *</label>
                   <select required value={form.litigators} onChange={(e) => setForm({ ...form, litigators: e.target.value })} className={inputClass}>
-                    <option value="">Select…</option>
+                    <option value="">Number of Litigators…</option>
                     <option value="1-9">1-9</option>
                     <option value="10-49">10-49</option>
                     <option value="50-149">50-149</option>
