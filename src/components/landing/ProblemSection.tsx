@@ -12,7 +12,7 @@ const ProblemSection = () => (
       <div className="grid md:grid-cols-[55fr_45fr] gap-12 items-start">
         {/* Left — content */}
         <div className="space-y-6">
-          <h2 className="text-[32px] md:text-[36px] font-bold text-navy leading-tight">
+          <h2 className="text-[26px] md:text-[36px] font-bold text-navy leading-tight">
             Your Team Spends 5–60+ Minutes Per Notice. Multiply That by Thousands.
           </h2>
           <div className="text-[17px] leading-relaxed text-muted-foreground space-y-4 max-w-lg">
@@ -22,7 +22,7 @@ const ProblemSection = () => (
             <p>ECFX automates the entire workflow:</p>
           </div>
 
-          <div className="grid grid-cols-3 gap-4 pt-2">
+          <div className="grid grid-cols-3 gap-3 md:gap-4 pt-2">
             {steps.map((s) => (
               <div key={s.label} className="space-y-2">
                 <s.icon className="h-5 w-5 text-destructive" />

@@ -41,7 +41,7 @@ const BenefitsSection = () => {
       <div className="container max-w-5xl mx-auto px-6">
         {/* CTA */}
         <div className="text-center space-y-6">
-          <h2 className="text-[32px] font-bold text-navy-foreground leading-tight">
+          <h2 className="text-[24px] md:text-[32px] font-bold text-navy-foreground leading-tight">
             Ready to Automate Your ECF Notice Processing?
           </h2>
           <p className="text-lg" style={{ color: "rgba(255,255,255,0.45)" }}>
@@ -49,7 +49,7 @@ const BenefitsSection = () => {
           </p>
           <button
             onClick={scrollToForm}
-            className="inline-flex items-center justify-center h-12 px-8 rounded-lg bg-destructive text-destructive-foreground font-bold text-base hover:bg-[hsl(var(--teal-hover))] transition-colors">
+            className="w-full md:w-auto inline-flex items-center justify-center h-12 px-8 rounded-lg bg-destructive text-destructive-foreground font-bold text-base hover:bg-[hsl(var(--teal-hover))] transition-colors">
             Schedule My Custom Demo →
           </button>
           <p className="text-sm mt-5" style={{ color: "rgba(255,255,255,0.45)" }}>

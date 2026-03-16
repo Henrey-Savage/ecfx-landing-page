@@ -33,11 +33,11 @@ const HeroSection = () => {
       backgroundRepeat: "no-repeat",
       backgroundPosition: "top center",
     }}>
-      <div className="container max-w-6xl mx-auto px-6 pt-[110px] md:pt-[110px] pb-16 md:pb-24 grid md:grid-cols-5 gap-14 items-center">
+      <div className="container max-w-6xl mx-auto px-4 md:px-6 pt-[110px] md:pt-[110px] pb-16 md:pb-24 grid md:grid-cols-5 gap-10 md:gap-14 items-center">
         {/* Left copy — 3 cols */}
         <div className="md:col-span-3 space-y-7">
           <p className="text-[13px] uppercase font-semibold tracking-[2px] text-destructive">ENTERPRISE NOTICE MANAGEMENT</p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] text-navy-foreground tracking-tight">
+          <h1 className="text-[28px] sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] text-navy-foreground tracking-tight">
             Stop Wasting Hundreds of Hours on Manual ECF Notice Processing
           </h1>
           <p className="text-lg text-navy-foreground/70 max-w-lg leading-relaxed">
@@ -55,7 +55,7 @@ const HeroSection = () => {
 
         {/* Right form — 2 cols */}
         <div className="md:col-span-2">
-          <div id="demo-form" className="bg-background rounded-2xl px-8 py-7" style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.12)" }}>
+          <div id="demo-form" className="bg-background rounded-2xl px-6 md:px-8 py-7" style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.12)" }}>
             {submitted ? (
               <div className="text-center py-8 space-y-2">
                 <Check className="h-10 w-10 text-navy mx-auto" />
@@ -93,7 +93,7 @@ const HeroSection = () => {
                   </select>
                 </div>
 
-                <Button type="submit" size="lg" className="w-full bg-destructive text-destructive-foreground hover:bg-[hsl(var(--teal-hover))] hover:scale-[1.02] transition-transform font-semibold text-base">
+                <Button type="submit" size="lg" className="w-full min-h-[48px] bg-destructive text-destructive-foreground hover:bg-[hsl(var(--teal-hover))] hover:scale-[1.02] transition-transform font-semibold text-base">
                   Schedule My Custom Demo
                 </Button>
               </form>
