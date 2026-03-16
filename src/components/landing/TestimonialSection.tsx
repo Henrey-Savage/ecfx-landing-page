@@ -1,5 +1,5 @@
 const TestimonialSection = () => (
-  <section className="bg-background border-t border-border py-[60px] md:py-[80px]">
+  <section className="bg-background border-t border-border py-[60px] md:py-[80px]" style={{ minHeight: "280px" }}>
     <div className="mx-auto max-w-[680px] px-6 text-center">
       <div
         className="text-primary/10 font-serif leading-none mb-4 select-none"
