@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 const features = [
-  "93% average reduction in processing costs",
   "Processes notices in seconds, not 5–60+ minutes",
   "Seamless DMS, case management & billing integration",
 ];
