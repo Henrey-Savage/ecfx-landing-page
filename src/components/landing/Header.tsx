@@ -35,7 +35,7 @@ const Header = () => {
         <div className="md:col-span-2 flex justify-center px-8">
           <button
             onClick={handleDemoClick}
-            className="w-full inline-flex items-center justify-center px-8 py-2.5 text-base font-semibold rounded-md bg-destructive text-destructive-foreground hover:bg-destructive/90 hover:scale-[1.02] transition-all duration-200 shadow-sm hover:shadow-md"
+            className="w-full inline-flex items-center justify-center px-8 py-2.5 text-base font-semibold rounded-md bg-destructive text-destructive-foreground hover:bg-destructive/90 hover:scale-[1.02] transition-all duration-200 shadow-sm hover:shadow-md whitespace-nowrap"
           >
             Schedule My Custom Demo
           </button>
