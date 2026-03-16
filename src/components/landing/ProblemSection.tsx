@@ -25,7 +25,9 @@ const ProblemSection = () => (
           <div className="grid grid-cols-3 gap-3 md:gap-4 pt-2">
             {steps.map((s) => (
               <div key={s.label} className="space-y-2">
-                <s.icon className="h-5 w-5 text-destructive" />
+                <div className="w-14 h-14 rounded-[14px] flex items-center justify-center" style={{ backgroundColor: "rgba(26,86,219,0.08)" }}>
+                  <s.icon className="h-5 w-5 text-[#1A56DB]" />
+                </div>
                 <p className="text-sm font-bold text-navy">{s.label}</p>
                 <p className="text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
               </div>
