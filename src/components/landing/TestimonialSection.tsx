@@ -1,5 +1,5 @@
 const TestimonialSection = () => (
-  <section className="relative bg-background pt-1 pb-2.5">
+  <section className="relative bg-background pt-1 pb-0">
     <div className="mx-auto max-w-[680px] px-6 text-center">
       <div
         className="text-primary/10 font-serif leading-none mb-1 select-none"
