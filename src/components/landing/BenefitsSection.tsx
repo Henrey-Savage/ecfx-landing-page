@@ -37,8 +37,11 @@ const BenefitsSection = () => {
   };
 
   return (
-    <section style={bgStyle}>
-      <div className="py-16 md:py-24">
+    <section style={{ ...bgStyle, position: "relative" }}>
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style={{ display: "block", width: "100%", height: "80px", position: "absolute", top: 0, left: 0, zIndex: 1 }}>
+        <path d="M0,0 L1440,0 L1440,0 C1080,80 360,80 0,0 Z" fill="#ffffff" />
+      </svg>
+      <div className="py-16 md:py-24" style={{ paddingTop: "80px" }}>
       <div className="container max-w-5xl mx-auto px-6">
         {/* CTA */}
         <div className="text-center space-y-6">

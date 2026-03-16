@@ -17,7 +17,7 @@ const TestimonialSection = () => (
         firm. I feel like this is actually a competitive edge for us.
       </blockquote>
 
-      <div className="mt-8 mb-20 space-y-0.5">
+      <div className="mt-8 mb-4 space-y-0.5">
         <p className="font-bold text-foreground" style={{ fontSize: "14px" }}>
           Kristi Pallante
         </p>
@@ -26,9 +26,6 @@ const TestimonialSection = () => (
         </p>
       </div>
     </div>
-    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" className="absolute bottom-0 left-0 block w-full" style={{ height: "80px", marginBottom: "-1px" }}>
-      <path d="M0,0 C360,80 1080,80 1440,0 L1440,80 L0,80 Z" fill="#2D8AE5" />
-    </svg>
   </section>
 );
 
