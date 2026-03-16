@@ -15,6 +15,15 @@ const ProblemSection = () => (
           <h2 className="text-[26px] md:text-[36px] font-bold text-navy leading-tight">
             Your Team Spends 5–60+ Minutes Per Notice. Multiply That by Thousands.
           </h2>
+
+          <div style={{ borderLeft: "3px solid rgba(26,86,219,0.2)", paddingLeft: "16px", marginBottom: "24px" }}>
+            <p className="italic text-foreground" style={{ fontSize: "15px", lineHeight: 1.55 }}>
+              "When you have a system that relies 100% on the case team to forward documents to your docketing team, you have a 100% chance that you don't have everything being forwarded."
+            </p>
+            <p style={{ fontSize: "13px", color: "#64748b", marginTop: "8px" }}>
+              — Tara Eberhart, Director of Practice Management, Dentons U.S. LLP
+            </p>
+          </div>
           <div className="text-[17px] leading-relaxed text-muted-foreground space-y-4 max-w-lg">
             <p>
               Every ECF notice triggers 8 manual steps — download, rename, file, route, distribute. Repeat that thousands of times a month.
