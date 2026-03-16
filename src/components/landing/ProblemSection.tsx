@@ -5,7 +5,7 @@ const stats = [
 
 
 const ProblemSection = () =>
-<section className="relative bg-surface pt-12 lg:pt-16 pb-28 md:pb-32">
+<section className="relative bg-surface pt-6 lg:pt-8 pb-28 md:pb-32">
     <div className="container max-w-6xl mx-auto px-6">
       <div className="grid md:grid-cols-[55fr_45fr] gap-12 items-start">
         {/* Left — headline + quote */}
