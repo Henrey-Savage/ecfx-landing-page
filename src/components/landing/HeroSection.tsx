@@ -93,7 +93,7 @@ const HeroSection = () => {
                   </select>
                 </div>
 
-                <Button type="submit" size="lg" className="w-full bg-destructive text-destructive-foreground hover:bg-[hsl(var(--teal-hover))] hover:scale-[1.02] transition-transform font-semibold text-base">
+                <Button type="submit" size="lg" className="w-full min-h-[48px] bg-destructive text-destructive-foreground hover:bg-[hsl(var(--teal-hover))] hover:scale-[1.02] transition-transform font-semibold text-base">
                   Schedule My Custom Demo
                 </Button>
               </form>

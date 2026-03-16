@@ -38,7 +38,9 @@ const SocialProof = () => {
         <p className="text-sm font-bold tracking-widest text-muted-foreground uppercase mb-10 text-center">
           Trusted by Leading Law Firms
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-12 gap-y-8 max-w-5xl mx-auto">
+
+        {/* Desktop grid */}
+        <div className="hidden md:grid md:grid-cols-3 lg:grid-cols-4 gap-x-12 gap-y-8 max-w-5xl mx-auto">
           {logos.map((logo, i) => (
             <div
               key={i}
@@ -52,11 +54,31 @@ const SocialProof = () => {
                 transitionDelay: visible ? `${i * 150}ms` : "0ms",
               }}
             >
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                className="w-[180px] h-[64px] object-contain grayscale opacity-55"
-              />
+              <img src={logo.src} alt={logo.alt} className="w-[180px] h-[64px] object-contain grayscale opacity-55" />
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile horizontal scroll */}
+        <div
+          className="md:hidden flex gap-8 overflow-x-auto px-6"
+          style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" } as React.CSSProperties}
+        >
+          <style>{`.mobile-logo-scroll::-webkit-scrollbar { display: none; }`}</style>
+          {logos.map((logo, i) => (
+            <div
+              key={i}
+              className="flex-shrink-0 flex items-center justify-center"
+              style={{
+                opacity: visible ? 1 : 0,
+                transform: visible ? "translateY(0) scale(1)" : "translateY(24px) scale(0.95)",
+                transitionProperty: "opacity, transform",
+                transitionDuration: "800ms",
+                transitionTimingFunction: "cubic-bezier(0.25, 0.1, 0.25, 1)",
+                transitionDelay: visible ? `${i * 150}ms` : "0ms",
+              }}
+            >
+              <img src={logo.src} alt={logo.alt} className="w-[140px] h-[56px] object-contain grayscale opacity-55" />
             </div>
           ))}
         </div>

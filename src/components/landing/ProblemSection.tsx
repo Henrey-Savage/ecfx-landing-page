@@ -22,7 +22,7 @@ const ProblemSection = () => (
             <p>ECFX automates the entire workflow:</p>
           </div>
 
-          <div className="grid grid-cols-3 gap-4 pt-2">
+          <div className="grid grid-cols-3 gap-3 md:gap-4 pt-2">
             {steps.map((s) => (
               <div key={s.label} className="space-y-2">
                 <s.icon className="h-5 w-5 text-destructive" />
