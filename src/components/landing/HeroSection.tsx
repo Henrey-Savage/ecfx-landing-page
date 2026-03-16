@@ -33,7 +33,7 @@ const HeroSection = () => {
       backgroundRepeat: "no-repeat",
       backgroundPosition: "top center",
     }}>
-      <div className="container max-w-6xl mx-auto px-4 md:px-6 pt-[110px] md:pt-[110px] pb-[60px] md:pb-[60px] grid md:grid-cols-5 gap-10 md:gap-14 items-center">
+      <div className="container max-w-6xl mx-auto px-4 md:px-6 pt-[110px] md:pt-[110px] pb-[80px] md:pb-[80px] grid md:grid-cols-5 gap-10 md:gap-14 items-center">
         {/* Left copy — 3 cols */}
         <div className="md:col-span-3 space-y-7">
           <p className="text-[13px] uppercase font-semibold tracking-[2px] text-destructive">ENTERPRISE NOTICE MANAGEMENT</p>
