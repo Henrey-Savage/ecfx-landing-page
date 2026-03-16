@@ -19,7 +19,7 @@ const ProblemSection = () =>
               "When you have a system that relies 100% on the case team to forward documents to your docketing team, you have a 100% chance that you don't have everything being forwarded."
             </p>
             <p style={{ fontSize: "13px", color: "#64748b", marginTop: "8px" }}>
-              — Kristi P., Director of Litigation Operations
+              — Tara Eberhart, Director of Practice Management, Dentons U.S. LLP
             </p>
           </div>
         </div>
