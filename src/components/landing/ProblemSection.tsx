@@ -1,22 +1,20 @@
-import { Download, Send, ClipboardList } from "lucide-react";
-
-const steps = [
-  { icon: Download, label: "Connect", desc: "Link notices to matters automatically" },
-  { icon: Send, label: "Automate", desc: "Download, rename, file & distribute in seconds" },
-  { icon: ClipboardList, label: "Monitor", desc: "Track every transaction with full audit trails" },
+const stats = [
+  { tag: "CHEAPER", number: "93%", label: "reduction in processing costs" },
+  { tag: "FASTER", number: "<5s", label: "to process each notice" },
+  { tag: "BETTER", number: "10x", label: "more accurate than manual processing" },
 ];
 
 const ProblemSection = () => (
   <section className="relative bg-surface pt-12 lg:pt-16 pb-28 md:pb-32">
     <div className="container max-w-6xl mx-auto px-6">
       <div className="grid md:grid-cols-[55fr_45fr] gap-12 items-start">
-        {/* Left — content */}
+        {/* Left — headline + quote */}
         <div className="space-y-6">
           <h2 className="text-[26px] md:text-[36px] font-bold text-navy leading-tight">
             Your Team Spends 5–60+ Minutes Per Notice. Multiply That by Thousands.
           </h2>
 
-          <div style={{ borderLeft: "3px solid rgba(26,86,219,0.2)", paddingLeft: "16px", marginBottom: "24px" }}>
+          <div style={{ borderLeft: "3px solid rgba(26,86,219,0.2)", paddingLeft: "16px" }}>
             <p className="italic text-foreground" style={{ fontSize: "15px", lineHeight: 1.55 }}>
               "When you have a system that relies 100% on the case team to forward documents to your docketing team, you have a 100% chance that you don't have everything being forwarded."
             </p>
@@ -24,51 +22,41 @@ const ProblemSection = () => (
               — Tara Eberhart, Director of Practice Management, Dentons U.S. LLP
             </p>
           </div>
-          <div className="text-[17px] leading-relaxed text-muted-foreground space-y-4 max-w-lg">
-            <p>
-              Every ECF notice triggers 8 manual steps — download, rename, file, route, distribute. Repeat that thousands of times a month.
-            </p>
-            <p>ECFX automates the entire workflow:</p>
-          </div>
-
-          <div className="grid grid-cols-3 gap-3 md:gap-4 pt-2">
-            {steps.map((s) => (
-              <div key={s.label} className="space-y-2">
-                <div className="w-14 h-14 rounded-[14px] flex items-center justify-center" style={{ backgroundColor: "rgba(26,86,219,0.08)" }}>
-                  <s.icon className="h-5 w-5 text-[#1A56DB]" />
-                </div>
-                <p className="text-sm font-bold text-navy">{s.label}</p>
-                <p className="text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Right — stat cards */}
-        <div className="space-y-3">
-          {/* Featured card */}
-          <div
-            className="rounded-[14px] p-7 text-center"
-            style={{ backgroundColor: "rgba(26,86,219,0.06)", border: "1px solid rgba(26,86,219,0.12)", boxShadow: "0 2px 8px rgba(0,0,0,0.06)" }}
-          >
-            <p className="text-6xl md:text-7xl font-bold leading-none" style={{ color: "#1A56DB" }}>93%</p>
-            <p className="text-sm mt-3" style={{ color: "#64748b" }}>average reduction in processing costs</p>
-          </div>
-
-          {/* Two smaller cards */}
-          <div className="grid grid-cols-2 gap-3">
-            <div className="rounded-[14px] bg-background p-5 text-center" style={{ border: "1px solid rgba(26,86,219,0.12)", boxShadow: "0 2px 8px rgba(0,0,0,0.06)" }}>
-              <p className="text-3xl font-bold text-navy leading-none">100s</p>
-              <p className="text-xs text-muted-foreground mt-2">of hours saved per week</p>
+        <div className="flex flex-col gap-3">
+          {stats.map((s) => (
+            <div
+              key={s.tag}
+              className="bg-background"
+              style={{
+                border: "1px solid rgba(26,86,219,0.1)",
+                borderRadius: "12px",
+                padding: "20px 24px",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+              }}
+            >
+              <p style={{ fontSize: "11px", fontWeight: 600, color: "#10b981", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+                {s.tag}
+              </p>
+              <p style={{ fontSize: "36px", fontWeight: 700, color: "#1A56DB", lineHeight: 1.1, marginTop: "4px" }}>
+                {s.number}
+              </p>
+              <p style={{ fontSize: "13px", color: "#64748b", marginTop: "4px" }}>
+                {s.label}
+              </p>
             </div>
-            <div className="rounded-[14px] bg-background p-5 text-center" style={{ border: "1px solid rgba(26,86,219,0.12)", boxShadow: "0 2px 8px rgba(0,0,0,0.06)" }}>
-              <p className="text-3xl font-bold text-navy leading-none">&lt;5s</p>
-              <p className="text-xs text-muted-foreground mt-2">to process each notice</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
+
+      {/* Tagline */}
+      <p className="text-center" style={{ fontSize: "18px", fontWeight: 600, color: "#1A56DB", marginTop: "32px" }}>
+        Better. Faster. Cheaper. Pick three.
+      </p>
     </div>
+
     <svg viewBox="0 0 1440 80" preserveAspectRatio="none" className="absolute bottom-0 left-0 block w-full" style={{ height: "80px", marginBottom: "-1px" }}>
       <path d="M0,0 C360,80 1080,80 1440,0 L1440,80 L0,80 Z" fill="hsl(var(--background))" />
     </svg>
