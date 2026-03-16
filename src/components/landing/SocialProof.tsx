@@ -33,7 +33,7 @@ const SocialProof = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative pt-12 pb-28 lg:pt-16 lg:pb-32">
+    <section ref={sectionRef} className="relative pt-5 pb-28 lg:pt-5 lg:pb-32">
       <div className="container mx-auto px-4">
         <p className="text-sm font-bold tracking-widest text-muted-foreground uppercase mb-10 text-center">
           Trusted by Leading Law Firms
