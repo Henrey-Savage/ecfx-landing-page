@@ -41,7 +41,7 @@ const HeroSection = () => {
             Automate Every ECF Notice From Download to Distribution — In Seconds
           </h1>
           <p className="text-lg text-navy-foreground/70 max-w-lg leading-relaxed">
-            ECFX Notice automates the entire 8-step ECF workflow — from download to distribution — in seconds. Trusted by Dentons, Cooley, Perkins Coie, and leading litigation firms.
+            Trusted by Dentons, Cooley, Perkins Coie, and leading litigation teams. Eliminate missed deadlines, reduce malpractice exposure, and free your docketing team from hours of manual processing every week.
           </p>
           <ul className="space-y-4 pt-2">
             {features.map((f) =>
