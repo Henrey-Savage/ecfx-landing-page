@@ -54,7 +54,7 @@ const SocialProof = () => {
                 transitionDelay: visible ? `${i * 150}ms` : "0ms",
               }}
             >
-              <img src={logo.src} alt={logo.alt} className="w-[180px] h-[64px] object-contain grayscale opacity-55" />
+              <img src={logo.src} alt={logo.alt} loading="lazy" className="w-[180px] h-[64px] object-contain grayscale opacity-55" />
             </div>
           ))}
         </div>
