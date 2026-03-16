@@ -42,11 +42,14 @@ const SocialProof = () => {
           {logos.map((logo, i) => (
             <div
               key={i}
-              className="flex items-center justify-center transition-all duration-500 ease-out"
+              className="flex items-center justify-center"
               style={{
                 opacity: visible ? 1 : 0,
-                transform: visible ? "translateY(0)" : "translateY(1rem)",
-                transitionDelay: visible ? `${i * 100}ms` : "0ms",
+                transform: visible ? "translateY(0) scale(1)" : "translateY(24px) scale(0.95)",
+                transitionProperty: "opacity, transform",
+                transitionDuration: "800ms",
+                transitionTimingFunction: "cubic-bezier(0.25, 0.1, 0.25, 1)",
+                transitionDelay: visible ? `${i * 150}ms` : "0ms",
               }}
             >
               <img
