@@ -16,8 +16,6 @@ const HeroSection = () => {
     firstName: "",
     lastName: "",
     email: "",
-    company: "",
-    phone: "",
     litigators: "",
   });
 
