@@ -11,7 +11,7 @@ const ProblemSection = () =>
         {/* Left — headline + quote */}
         <div className="space-y-6">
           <h2 className="text-[26px] md:text-[36px] font-bold text-navy leading-tight">
-            Your Team Spends 5–60+ Minutes Per Notice. Multiply That by Thousands.
+            Thousands of Notices. Seconds to Process. Zero Missed.
           </h2>
 
           <div style={{ borderLeft: "3px solid rgba(26,86,219,0.2)", paddingLeft: "16px" }}>
