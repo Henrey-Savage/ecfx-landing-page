@@ -61,10 +61,8 @@ const SocialProof = () => {
 
         {/* Mobile horizontal scroll */}
         <div
-          className="md:hidden flex gap-8 overflow-x-auto px-6"
-          style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" } as React.CSSProperties}
+          className="md:hidden flex gap-8 overflow-x-auto px-6 hide-scrollbar"
         >
-          <style>{`.mobile-logo-scroll::-webkit-scrollbar { display: none; }`}</style>
           {logos.map((logo, i) => (
             <div
               key={i}
