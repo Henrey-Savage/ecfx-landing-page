@@ -14,8 +14,6 @@ const Index = () => (
       <WaveDivider type="bottom" />
       <SocialProof />
       <ProblemSection />
-      
-      <WorkflowSection />
       <WaveDivider type="top" />
       <BenefitsSection />
       <WaveDivider type="bottom" />
