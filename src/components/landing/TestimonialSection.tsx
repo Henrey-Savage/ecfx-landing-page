@@ -17,7 +17,7 @@ const TestimonialSection = () => (
         firm. I feel like this is actually a competitive edge for us.
       </blockquote>
 
-      <div className="mt-8" style={{ marginBottom: "20px" }}>
+      <div className="mt-8" style={{ marginBottom: "8px" }}>
         <p className="font-bold text-foreground" style={{ fontSize: "14px" }}>
           Kristi P., Director of Litigation Operations
         </p>
