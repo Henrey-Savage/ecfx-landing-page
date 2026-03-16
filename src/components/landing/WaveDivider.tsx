@@ -10,11 +10,12 @@ const WaveDivider = ({ type, bgColor, flip }: WaveDividerProps) => {
   "https://info.goecfx.com/hubfs/curve.png" :
   "https://info.goecfx.com/hubfs/Bottom-curve.png";
 
-  return;
-
-
-
-
+  return (
+    <div className={`w-full leading-[0] ${flip ? "rotate-180" : ""}`} style={{ backgroundColor: bgColor }}>
+      <img src={src} alt="" className="w-full block" />
+    </div>
+  );
+};
 
 
 
