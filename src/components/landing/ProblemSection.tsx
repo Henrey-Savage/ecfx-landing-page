@@ -1,7 +1,7 @@
 const stats = [
 { tag: "CHEAPER", number: "93%", label: "reduction in processing costs" },
 { tag: "FASTER", number: "<5s", label: "to process each notice" },
-{ tag: "BETTER", number: "100%", label: "processed accurately, free from human error" }];
+{ tag: "BETTER", number: "10x", label: "more accurate than manual processing" }];
 
 
 const ProblemSection = () =>
