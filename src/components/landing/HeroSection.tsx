@@ -22,7 +22,7 @@ const HeroSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
-    setForm({ firstName: "", lastName: "", email: "", company: "", phone: "", litigators: "" });
+    setForm({ firstName: "", lastName: "", email: "", litigators: "" });
   };
 
   return (
