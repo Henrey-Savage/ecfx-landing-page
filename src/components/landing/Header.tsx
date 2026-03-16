@@ -21,7 +21,7 @@ const Header = () => {
     <header
       className="w-full fixed top-0 left-0 z-50"
       style={{
-        backgroundColor: scrolled ? "rgba(45, 138, 229, 0.97)" : "transparent",
+        backgroundColor: scrolled ? "rgba(58, 138, 241, 0.92)" : "transparent",
         backdropFilter: scrolled ? "blur(10px)" : "none",
         WebkitBackdropFilter: scrolled ? "blur(10px)" : "none",
         boxShadow: scrolled ? "0 2px 10px rgba(0,0,0,0.15)" : "none",
