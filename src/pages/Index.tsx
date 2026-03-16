@@ -3,6 +3,7 @@ import HeroSection from "@/components/landing/HeroSection";
 import SocialProof from "@/components/landing/SocialProof";
 import ProblemSection from "@/components/landing/ProblemSection";
 import BenefitsSection from "@/components/landing/BenefitsSection";
+import TestimonialSection from "@/components/landing/TestimonialSection";
 import Footer from "@/components/landing/Footer";
 import WaveDivider from "@/components/landing/WaveDivider";
 
@@ -14,6 +15,7 @@ const Index = () => (
       <WaveDivider type="bottom" />
       <SocialProof />
       <ProblemSection />
+      <TestimonialSection />
       <WaveDivider type="top" />
       <BenefitsSection />
       <WaveDivider type="bottom" />
