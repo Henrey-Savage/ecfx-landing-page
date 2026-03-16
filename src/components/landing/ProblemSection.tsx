@@ -7,7 +7,7 @@ const steps = [
 ];
 
 const ProblemSection = () => (
-  <section className="relative bg-surface pt-12 lg:pt-16 pb-28 md:pb-32">
+  <section className="relative bg-surface pt-12 lg:pt-16 pb-[20px] md:pb-[20px]">
     <div className="container max-w-6xl mx-auto px-6">
       <div className="grid md:grid-cols-[55fr_45fr] gap-12 items-start">
         {/* Left — content */}
