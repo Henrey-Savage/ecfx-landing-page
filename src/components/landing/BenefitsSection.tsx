@@ -46,19 +46,27 @@ const BenefitsSection = () => {
         {/* CTA */}
         <div className="text-center space-y-6">
           <h2 className="text-[24px] md:text-[32px] font-bold text-navy-foreground leading-tight">
-            Ready to Automate Your ECF Notice Processing?
+            Are You <span style={{ fontFamily: "Georgia, serif", fontStyle: "italic" }}>Still</span> Manually Processing ECF Notices?
           </h2>
           <p className="text-lg" style={{ color: "rgba(255,255,255,0.45)" }}>
-            Join Dentons, Cooley, and 100+ litigation teams saving hundreds of hours every week.
+            Join Dentons, Cooley, Perkins Coie, and leading litigation teams saving hundreds of hours every week.
           </p>
           <button
             onClick={scrollToForm}
             className="w-full md:w-auto inline-flex items-center justify-center h-12 px-8 rounded-lg bg-destructive text-destructive-foreground font-bold text-base hover:bg-[hsl(var(--teal-hover))] transition-colors">
             Schedule My Custom Demo →
           </button>
-          <p className="text-sm mt-5" style={{ color: "rgba(255,255,255,0.45)" }}>
-            Or email <span style={{ color: "rgba(255,255,255,0.65)" }}>sales@goecfx.com</span> · <span style={{ color: "rgba(255,255,255,0.65)" }}>(310) 750-4160</span>
+          <p style={{ fontSize: "13px", fontStyle: "italic", color: "rgba(255,255,255,0.5)", marginTop: "16px", marginBottom: "16px" }}>
+            Typical onboarding takes 2–3 weeks — start before your next filing deadline.
           </p>
+          <div style={{ marginTop: "4px" }}>
+            <p style={{ fontSize: "18px", fontWeight: 600, color: "rgba(255,255,255,0.85)" }}>
+              (310) 750-4160
+            </p>
+            <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.45)" }}>
+              or email sales@goecfx.com
+            </p>
+          </div>
         </div>
       </div>
       </div>
