@@ -26,14 +26,14 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero-section" style={{
+    <section id="hero-section" className="relative" style={{
       backgroundColor: "#2D8AE5",
       backgroundImage: "url('https://info.goecfx.com/hubfs/BG-1.jpg')",
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "top center",
     }}>
-      <div className="container max-w-6xl mx-auto px-4 md:px-6 pt-[110px] md:pt-[110px] pb-16 md:pb-24 grid md:grid-cols-5 gap-10 md:gap-14 items-center">
+      <div className="container max-w-6xl mx-auto px-4 md:px-6 pt-[110px] md:pt-[110px] pb-[96px] md:pb-[104px] grid md:grid-cols-5 gap-10 md:gap-14 items-center">
         {/* Left copy — 3 cols */}
         <div className="md:col-span-3 space-y-7">
           <p className="text-[13px] uppercase font-semibold tracking-[2px] text-destructive">ENTERPRISE NOTICE MANAGEMENT</p>
@@ -55,7 +55,7 @@ const HeroSection = () => {
 
         {/* Right form — 2 cols */}
         <div className="md:col-span-2">
-          <div id="demo-form" className="bg-background rounded-2xl px-6 md:px-8 py-7" style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.12)" }}>
+          <div id="demo-form" className="bg-background rounded-xl px-6 md:px-8 py-7" style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.06)" }}>
             {submitted ? (
               <div className="text-center py-8 space-y-2">
                 <Check className="h-10 w-10 text-navy mx-auto" />
@@ -101,6 +101,9 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" className="absolute bottom-0 left-0 block w-full" style={{ height: "80px" }}>
+        <path d="M0,80 C360,0 1080,0 1440,80 L1440,80 L0,80 Z" fill="hsl(var(--background))" />
+      </svg>
     </section>
   );
 };

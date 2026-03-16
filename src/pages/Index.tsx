@@ -5,20 +5,16 @@ import ProblemSection from "@/components/landing/ProblemSection";
 import BenefitsSection from "@/components/landing/BenefitsSection";
 import TestimonialSection from "@/components/landing/TestimonialSection";
 import Footer from "@/components/landing/Footer";
-import WaveDivider from "@/components/landing/WaveDivider";
 
 const Index = () => (
   <div className="min-h-screen flex flex-col">
     <Header />
     <main className="flex-1">
       <HeroSection />
-      <WaveDivider type="bottom" />
       <SocialProof />
       <ProblemSection />
       <TestimonialSection />
-      <WaveDivider type="top" />
       <BenefitsSection />
-      <WaveDivider type="bottom" />
     </main>
     <Footer />
   </div>

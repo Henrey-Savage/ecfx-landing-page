@@ -25,7 +25,9 @@ const ProblemSection = () => (
           <div className="grid grid-cols-3 gap-3 md:gap-4 pt-2">
             {steps.map((s) => (
               <div key={s.label} className="space-y-2">
-                <s.icon className="h-5 w-5 text-destructive" />
+                <div className="w-14 h-14 rounded-[14px] flex items-center justify-center" style={{ backgroundColor: "rgba(26,86,219,0.08)" }}>
+                  <s.icon className="h-5 w-5 text-[#1A56DB]" />
+                </div>
                 <p className="text-sm font-bold text-navy">{s.label}</p>
                 <p className="text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
               </div>
@@ -38,19 +40,19 @@ const ProblemSection = () => (
           {/* Featured card */}
           <div
             className="rounded-[14px] p-7 text-center"
-            style={{ backgroundColor: "#0f172a" }}
+            style={{ backgroundColor: "rgba(26,86,219,0.06)", border: "1px solid rgba(26,86,219,0.12)", boxShadow: "0 2px 8px rgba(0,0,0,0.06)" }}
           >
-            <p className="text-6xl md:text-7xl font-bold text-success leading-none">93%</p>
-            <p className="text-sm text-white/80 mt-3">average reduction in processing costs</p>
+            <p className="text-6xl md:text-7xl font-bold leading-none" style={{ color: "#1A56DB" }}>93%</p>
+            <p className="text-sm mt-3" style={{ color: "#64748b" }}>average reduction in processing costs</p>
           </div>
 
           {/* Two smaller cards */}
           <div className="grid grid-cols-2 gap-3">
-            <div className="rounded-[14px] border border-border bg-background p-5 text-center">
+            <div className="rounded-[14px] bg-background p-5 text-center" style={{ border: "1px solid rgba(26,86,219,0.12)", boxShadow: "0 2px 8px rgba(0,0,0,0.06)" }}>
               <p className="text-3xl font-bold text-navy leading-none">100s</p>
               <p className="text-xs text-muted-foreground mt-2">of hours saved per week</p>
             </div>
-            <div className="rounded-[14px] border border-border bg-background p-5 text-center">
+            <div className="rounded-[14px] bg-background p-5 text-center" style={{ border: "1px solid rgba(26,86,219,0.12)", boxShadow: "0 2px 8px rgba(0,0,0,0.06)" }}>
               <p className="text-3xl font-bold text-navy leading-none">&lt;5s</p>
               <p className="text-xs text-muted-foreground mt-2">to process each notice</p>
             </div>
