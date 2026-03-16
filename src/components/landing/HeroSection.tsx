@@ -33,28 +33,9 @@ const HeroSection = () => {
       backgroundRepeat: "no-repeat",
       backgroundPosition: "top center"
     }}>
-      <div className="container max-w-6xl mx-auto px-4 md:px-6 pt-[110px] md:pt-[110px] pb-[80px] md:pb-[80px] grid md:grid-cols-5 gap-10 md:gap-14 items-center">
-        {/* Left copy — 3 cols */}
-        <div className="md:col-span-3 space-y-7">
-          <p className="text-[13px] uppercase font-semibold tracking-[2px] text-destructive">ENTERPRISE NOTICE MANAGEMENT</p>
-          <h1 className="text-[28px] sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] text-navy-foreground tracking-tight">
-            Automate Every ECF Notice From Download to Distribution — In Seconds
-          </h1>
-          <p className="text-lg text-navy-foreground/70 max-w-lg leading-relaxed">
-            Trusted by Dentons, Cooley, Perkins Coie, and leading litigation teams. Eliminate missed deadlines, reduce malpractice exposure, and free your docketing team from hours of manual processing every week.
-          </p>
-          <ul className="space-y-4 pt-2">
-            {features.map((f) =>
-            <li key={f} className="flex items-center gap-3 text-navy-foreground">
-                <Check className="h-5 w-5 text-success flex-shrink-0" />
-                <span className="text-base">{f}</span>
-              </li>
-            )}
-          </ul>
-        </div>
-
-        {/* Right form — 2 cols */}
-        <div className="md:col-span-2">
+      <div className="container max-w-6xl mx-auto px-4 md:px-6 pt-[90px] md:pt-[110px] pb-[80px] md:pb-[80px] flex flex-col md:grid md:grid-cols-5 gap-6 md:gap-14 items-center">
+        {/* Form — appears first on mobile */}
+        <div className="order-1 md:order-2 md:col-span-2 w-full">
           <div id="demo-form" className="bg-background rounded-xl px-6 md:px-8 py-7" style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.06)" }}>
             {submitted ?
             <div className="text-center py-8 space-y-2">
