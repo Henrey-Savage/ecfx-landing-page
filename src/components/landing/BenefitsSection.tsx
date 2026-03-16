@@ -39,26 +39,8 @@ const BenefitsSection = () => {
   return (
     <section className="py-16 md:py-24" style={bgStyle}>
       <div className="container max-w-5xl mx-auto px-6">
-        {/* Benefits */}
-        
-
-        
-        <div className="grid md:grid-cols-2 gap-6">
-          {benefits.map((b) =>
-          <div
-            key={b.title}
-            className="rounded-xl p-7 border border-white/15"
-            style={{ background: "rgba(255,255,255,0.05)", backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)" }}>
-            
-              <b.icon className="h-7 w-7 text-destructive mb-4" />
-              <h3 className="text-xl font-bold text-navy-foreground mb-2">{b.title}</h3>
-              <p className="text-[15px] leading-relaxed" style={{ color: "#B0BEC5" }}>{b.description}</p>
-            </div>
-          )}
-        </div>
-
-        {/* CTA — merged into same blue section */}
-        <div className="text-center mt-20 space-y-6">
+        {/* CTA */}
+        <div className="text-center space-y-6">
           <h2 className="text-[32px] font-bold text-navy-foreground leading-tight">
             Ready to Automate Your ECF Notice Processing?
           </h2>
