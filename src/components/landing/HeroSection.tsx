@@ -55,7 +55,7 @@ const HeroSection = () => {
 
         {/* Right form — 2 cols */}
         <div className="md:col-span-2">
-          <div id="demo-form" className="bg-background rounded-2xl px-6 md:px-8 py-7" style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.12)" }}>
+          <div id="demo-form" className="bg-background rounded-xl px-6 md:px-8 py-7" style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.06)" }}>
             {submitted ? (
               <div className="text-center py-8 space-y-2">
                 <Check className="h-10 w-10 text-navy mx-auto" />
