@@ -17,12 +17,9 @@ const TestimonialSection = () => (
         firm. I feel like this is actually a competitive edge for us.
       </blockquote>
 
-      <div className="mt-8 mb-4 space-y-0.5">
+      <div className="mt-8 mb-4">
         <p className="font-bold text-foreground" style={{ fontSize: "14px" }}>
-          Kristi Pallante
-        </p>
-        <p className="text-muted-foreground" style={{ fontSize: "13px" }}>
-          Director of Litigation Operations, Rottenstreich Farley Bronstein Fisher Potter Hodas LLP
+          Kristi P., Director of Litigation Operations
         </p>
       </div>
     </div>
