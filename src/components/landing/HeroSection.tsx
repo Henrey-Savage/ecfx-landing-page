@@ -84,10 +84,11 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <p className="text-lg text-navy-foreground/70 max-w-lg leading-relaxed">
+          <p className="hidden md:block text-lg text-navy-foreground/70 max-w-lg leading-relaxed">
             Trusted by Dentons, Cooley, Perkins Coie, and leading litigation teams. Eliminate missed deadlines, reduce malpractice exposure, and free your docketing team from hours of manual processing every week.
           </p>
-          <ul className="hidden md:block space-y-4 pt-2">
+          {/* Mobile: checkmark bullets; Desktop: checkmark bullets */}
+          <ul className="space-y-4 pt-2">
             {features.map((f) =>
               <li key={f} className="flex items-center gap-3 text-navy-foreground">
                 <Check className="h-5 w-5 text-success flex-shrink-0" />
