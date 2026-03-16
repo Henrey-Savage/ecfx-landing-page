@@ -61,6 +61,7 @@ const BenefitsSection = () => {
           </p>
         </div>
       </div>
+      </div>
     </section>);
 
 };
