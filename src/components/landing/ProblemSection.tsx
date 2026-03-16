@@ -16,6 +16,12 @@ const ProblemSection = () => (
         <p className="text-sm text-muted-foreground tracking-wide uppercase pt-2">
           FASTER&nbsp; ·&nbsp; CHEAPER&nbsp; ·&nbsp; ERROR-FREE
         </p>
+        <button
+          onClick={() => document.getElementById("demo-form")?.scrollIntoView({ behavior: "smooth" })}
+          className="mt-6 inline-flex items-center px-8 py-3 text-base font-semibold rounded-md bg-destructive text-destructive-foreground hover:bg-destructive/90 hover:scale-[1.02] transition-all duration-200 shadow-sm hover:shadow-md"
+        >
+          Schedule My Custom Demo
+        </button>
       </div>
     </div>
   </section>
