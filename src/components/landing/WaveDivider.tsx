@@ -12,7 +12,7 @@ const WaveDivider = ({ type, bgColor, flip }: WaveDividerProps) => {
 
   return (
     <div className={`w-full leading-[0] ${flip ? "rotate-180" : ""}`} style={{ backgroundColor: bgColor }}>
-      <img src={src} alt="" className="w-full block" />
+      <img src={src} alt="" loading="lazy" className="w-full block" style={{ minHeight: "40px" }} />
     </div>
   );
 };
