@@ -12,7 +12,7 @@ const ProblemSection = () => (
       <div className="grid md:grid-cols-[55fr_45fr] gap-12 items-start">
         {/* Left — content */}
         <div className="space-y-6">
-          <h2 className="text-[32px] md:text-[36px] font-bold text-navy leading-tight">
+          <h2 className="text-[26px] md:text-[36px] font-bold text-navy leading-tight">
             Your Team Spends 5–60+ Minutes Per Notice. Multiply That by Thousands.
           </h2>
           <div className="text-[17px] leading-relaxed text-muted-foreground space-y-4 max-w-lg">
