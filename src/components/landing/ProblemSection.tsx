@@ -11,7 +11,7 @@ const ProblemSection = () =>
         {/* Left — headline + quote */}
         <div className="space-y-6">
           <h2 className="text-[26px] md:text-[36px] font-bold text-navy leading-tight">
-            Thousands of Notices. Seconds to Process. Zero Missed.
+            Thousands of Notices.<br />Seconds to Process.<br />Zero Missed.
           </h2>
 
           <div style={{ borderLeft: "3px solid rgba(26,86,219,0.2)", paddingLeft: "16px" }}>
