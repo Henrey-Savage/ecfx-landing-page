@@ -59,14 +59,12 @@ const SocialProof = () => {
           ))}
         </div>
 
-        {/* Mobile horizontal scroll */}
-        <div
-          className="md:hidden flex gap-8 overflow-x-auto px-6 hide-scrollbar"
-        >
+        {/* Mobile grid — 4 cols */}
+        <div className="md:hidden grid grid-cols-4 gap-x-4 gap-y-6 max-w-sm mx-auto">
           {logos.map((logo, i) => (
             <div
               key={i}
-              className="flex-shrink-0 flex items-center justify-center"
+              className="flex items-center justify-center"
               style={{
                 opacity: visible ? 1 : 0,
                 transform: visible ? "translateY(0) scale(1)" : "translateY(24px) scale(0.95)",
@@ -76,7 +74,7 @@ const SocialProof = () => {
                 transitionDelay: visible ? `${i * 150}ms` : "0ms",
               }}
             >
-              <img src={logo.src} alt={logo.alt} loading="lazy" className="w-[140px] h-[56px] object-contain grayscale opacity-55" />
+              <img src={logo.src} alt={logo.alt} loading="lazy" className="w-[72px] h-[40px] object-contain grayscale opacity-55" />
             </div>
           ))}
         </div>
