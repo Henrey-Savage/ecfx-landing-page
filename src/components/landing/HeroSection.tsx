@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 const features = [
-  "Processes notices in seconds, not 5–60+ minutes",
-  "Seamless DMS, case management & billing integration",
-];
+"Processes notices in seconds, not 5–60+ minutes",
+"Seamless DMS, case management & billing integration"];
+
 
 const inputClass =
-  "w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm text-navy focus:outline-none focus:ring-2 focus:ring-ring transition-shadow";
+"w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm text-navy focus:outline-none focus:ring-2 focus:ring-ring transition-shadow";
 
 const HeroSection = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -16,7 +16,7 @@ const HeroSection = () => {
     firstName: "",
     lastName: "",
     email: "",
-    litigators: "",
+    litigators: ""
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -31,7 +31,7 @@ const HeroSection = () => {
       backgroundImage: "url('https://info.goecfx.com/hubfs/BG-1.jpg')",
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "top center",
+      backgroundPosition: "top center"
     }}>
       <div className="container max-w-6xl mx-auto px-4 md:px-6 pt-[110px] md:pt-[110px] pb-[80px] md:pb-[80px] grid md:grid-cols-5 gap-10 md:gap-14 items-center">
         {/* Left copy — 3 cols */}
@@ -41,29 +41,29 @@ const HeroSection = () => {
             Stop Wasting Hundreds of Hours on Manual ECF Notice Processing
           </h1>
           <p className="text-lg text-navy-foreground/70 max-w-lg leading-relaxed">
-            ECFX Notice automates the entire 8-step ECF workflow — from download to distribution — in seconds. Trusted by Dentons, Cooley, Perkins Coie, and 100+ leading firms.
+            ECFX Notice automates the entire 8-step ECF workflow — from download to distribution — in seconds. Trusted by Dentons, Cooley, Perkins Coie, and leading litigation firms.
           </p>
           <ul className="space-y-4 pt-2">
-            {features.map((f) => (
-              <li key={f} className="flex items-center gap-3 text-navy-foreground">
+            {features.map((f) =>
+            <li key={f} className="flex items-center gap-3 text-navy-foreground">
                 <Check className="h-5 w-5 text-success flex-shrink-0" />
                 <span className="text-base">{f}</span>
               </li>
-            ))}
+            )}
           </ul>
         </div>
 
         {/* Right form — 2 cols */}
         <div className="md:col-span-2">
           <div id="demo-form" className="bg-background rounded-xl px-6 md:px-8 py-7" style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.06)" }}>
-            {submitted ? (
-              <div className="text-center py-8 space-y-2">
+            {submitted ?
+            <div className="text-center py-8 space-y-2">
                 <Check className="h-10 w-10 text-navy mx-auto" />
                 <p className="text-lg font-semibold text-navy">Thank you!</p>
                 <p className="text-muted-foreground text-sm">We will be in touch.</p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
+              </div> :
+
+            <form onSubmit={handleSubmit} className="space-y-5">
                 <h3 className="text-xl font-bold text-navy text-center">Get Your Custom Demo</h3>
                 <p className="text-sm text-muted-foreground text-center">See how ECFX can save your firm hundreds of hours per week.</p>
 
@@ -97,15 +97,15 @@ const HeroSection = () => {
                   Schedule My Custom Demo
                 </Button>
               </form>
-            )}
+            }
           </div>
         </div>
       </div>
       <svg viewBox="0 0 1440 80" preserveAspectRatio="none" className="absolute bottom-0 left-0 block w-full" style={{ height: "80px", marginBottom: "-1px" }}>
         <path d="M0,0 C360,80 1080,80 1440,0 L1440,80 L0,80 Z" fill="hsl(var(--background))" />
       </svg>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
